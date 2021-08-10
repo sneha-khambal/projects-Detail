@@ -1,0 +1,23 @@
+img{width: 120px;}
+
+.one{margin-left:40%;margin-top: 5%;}
+
+.two{margin-left:25%;margin-top: 5%;}
+
+.two img:nth-child(2){
+    margin-left:25%;margin-top: 2%;
+} 
+
+.three{
+    margin-left:30%;margin-top: 2%;
+}
+
+.three img:nth-child(2){
+    margin-left:10%;margin-top: 2%;
+}
+
+@media screen and(max-width:600px) {
+    img{
+        width: 50px;
+    }
+}

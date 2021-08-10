@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+.card{
+    margin : 2%;margin-top: 5%; text-transform:capitalize;cursor: pointer; 
+}
+.card-header{
+    font-size: 20px;  font-weight: bolder;
+}

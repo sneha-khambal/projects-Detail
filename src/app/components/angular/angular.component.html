@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header angular-header" (click)="getProject()">
+    Projects  
+  </div>
+  <div class="card-body" *ngFor="let project of  projectDetail ;let i= index">
+    <h5 class="card-title"> {{i+1}} : {{project.name}}</h5>
+    <p class="card-text"> {{project.description}}</p>
+    <a href="{{project.link}}" target="blank" class="btn btn-dark">link</a>
+    <a href="{{project.sourceCode}}" target="blank" class="btn btn-dark m-4">source code</a>
+
+ </div>
+</div>

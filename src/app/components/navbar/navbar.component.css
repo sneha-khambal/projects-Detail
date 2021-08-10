@@ -1,0 +1,18 @@
+header{
+    background-color: darkslategray;padding: 10px;position: sticky; 
+}
+.navbar{
+    color:aliceblue;cursor: pointer;
+}
+
+.brand{
+    font-size: 40px;font-weight: 900;
+}
+.navbar div {
+    float: right;display: flex;font-weight: bolder; letter-spacing:0.5px; line-height: 5px;
+}
+span:hover{
+    color: chartreuse;
+}
+
+ 
