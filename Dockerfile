@@ -5,6 +5,7 @@ COPY package.json /app
 RUN  npm i npm
 RUN  echo "installed npm"
 RUN npm install -g @angular/cli@latest
+RUN npm update
 COPY  . .
 RUN npm run build  
  
