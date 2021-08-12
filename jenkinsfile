@@ -25,7 +25,7 @@ pipeline{
             steps{
                 
                    sh """
-                   docker run -d --name ngImage -p 9000:80 ngAppimage 
+                   docker run -d --name ngImage -p 9000:80 ngappimage 
                    """
                 
             }
