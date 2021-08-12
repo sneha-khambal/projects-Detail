@@ -1,20 +1,25 @@
 pipeline{
-    
+    environment{
+        
+        docker_image = ""
+    }
+    agent any
 
     stages{
         stage("source-code"){
             steps{
                 git "https://github.com/sneha-khambal/projects-Detail.git"
-                sh echo "source code is fetch"
             }
         }
         stage("build-image"){
             steps{
-                docker_image = docker.build registry + "$BUILD_NUMBER"
-                sh echo docker_image
+                script{
+                    docker_image = docker.build registry + "$BUILD_NUMBER"
+                    sh echo docker_image
+                }
             }
 
         }
-         
+        
            }
 }
