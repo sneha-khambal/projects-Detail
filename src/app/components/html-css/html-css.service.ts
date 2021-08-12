@@ -10,7 +10,7 @@ export class HtmlCssService {
     
     new ProjectDetails(
       'interactive-pricing-component',
-    'Interactive-pricing-component project build with html5,css3 and javascript.It is a desktop Application.',
+    'Interactive-pricing-component project build with html5,css3 and javascript.',
     'https://interactive-pricing-comp-946fd.web.app/',
     'https://github.com/sneha-khambal/interactive-pricing-component-main.git'),
 
