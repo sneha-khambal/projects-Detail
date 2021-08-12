@@ -15,7 +15,7 @@ pipeline{
             steps{
                  
                    sh """
-                   docker build -t ngappimage
+                   docker build -t ngappimage .
                    """
                 
             }
