@@ -3,7 +3,7 @@ pipeline{
         
         docker_image = ""
     }
-    agent {dockerfile true}
+    agent any
 
     stages{
         stage("source-code"){
