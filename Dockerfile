@@ -6,7 +6,7 @@ RUN  npm i npm
 RUN  echo "installed npm"
 RUN npm install -g @angular/cli@latest
 COPY  . .
-RUN npm run ng build  
+RUN npm run build  
  
 
 FROM nginx:1.17.1-alpine
