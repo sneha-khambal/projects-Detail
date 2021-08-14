@@ -5,7 +5,7 @@ COPY package.json /app
 RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
 
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
-RUN npm i
+RUN npm i -g npm
 RUN mkdir /web
 RUN cp -R ./node_modules ./web
 
