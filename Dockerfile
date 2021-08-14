@@ -6,7 +6,7 @@ COPY package.json  /usr/src/app/
 
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
 RUN npm i -g npm
-RUN npm install -g angularcli@12.1.4
+RUN npm install -g angularcli@12.1.0
 
  
 COPY  . .
