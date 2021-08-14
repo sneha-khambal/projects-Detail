@@ -1,13 +1,14 @@
 FROM node:latest AS build
 WORKDIR /usr/src/app
-
-RUN  npm i npm
- 
- 
-
 COPY package-lock.json ./
 COPY package.json /app
  
+RUN  npm i npm
+RUN npm update -g @angular/cli
+RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
+
+
+
 COPY  . .
 RUN npm run build  
  
