@@ -9,8 +9,10 @@ COPY  package.json  /app/
 # RUN npm update
 # # run npm update
 RUN npm install
+RUN npm install -g angular/cli@latest
 RUN ng update
- 
+RUN install @angular-devkit/build-angular
+RUN npm install --save-dev @angular-devkit/build-angular Or yarn add @angular-devkit/build-angular --dev
 # and finally,
  
 RUN npm update
