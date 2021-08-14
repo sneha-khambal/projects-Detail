@@ -1,5 +1,5 @@
 FROM node:latest AS build
-WORKDIR /usr/src//app
+WORKDIR /usr/src/app
 COPY  package-lock.json /app
 COPY  package.json  /app
  
@@ -9,9 +9,9 @@ COPY  package.json  /app
 # RUN npm update
 # # run npm update
 RUN npm i npm 
-RUN npm install -g angular/cli@latest
+RUN npm install angular/cli@latest
  
-RUN install @angular-devkit/build-angular
+RUN npm install @angular-devkit/build-angular
 RUN npm install --save-dev @angular-devkit/build-angular  
 # and finally,
  
