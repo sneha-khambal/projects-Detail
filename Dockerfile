@@ -8,12 +8,11 @@ RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
 RUN npm i -g npm
  
 
-WORKDIR /web
-
+ 
 COPY . .
 
 ## Build the angular app in production mode and store the artifacts in dist folder
-RUN $(npm bin)/ng build --prod --build-optimizer
+RUN  ng build --prod --build-optimizer
 
 
 COPY  . .
