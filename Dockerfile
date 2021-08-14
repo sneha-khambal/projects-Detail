@@ -9,7 +9,7 @@ COPY  package.json  /app
 # RUN npm update
 # # run npm update
 RUN npm i npm 
-RUN npm install angular/cli@latest
+RUN npm install -g @angular/cli
  
 RUN npm install @angular-devkit/build-angular
 RUN npm install --save-dev @angular-devkit/build-angular  
