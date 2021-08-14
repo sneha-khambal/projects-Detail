@@ -1,5 +1,7 @@
 FROM node:latest AS build
-WORKDIR  /usr/src/app
+WORKDIR /app
+COPY  package-lock.json /app/
+COPY  package.json  /app/
  
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
 # RUN npm i -g npm
@@ -13,11 +15,11 @@ RUN ng update
  
 RUN npm update
  
-COPY  . /usr/src/app/
+COPY  . .
 RUN npm run build  
  
 
 FROM nginx:1.17.1-alpine
 
-COPY --from=build  /usr/src/app/dist/projects-Detail /usr/share/nginx/html
+COPY --from=build   /app/dist/projects-Detail /usr/share/nginx/html
   
