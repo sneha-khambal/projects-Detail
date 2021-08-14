@@ -11,8 +11,7 @@ RUN npm install -g angularcli@latest
  
 COPY . .
 
-## Build the angular app in production mode and store the artifacts in dist folder
-RUN  ng build --prod 
+ 
 
 COPY  . .
 RUN npm run build  
