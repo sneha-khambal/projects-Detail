@@ -1,5 +1,5 @@
 FROM node:latest AS build
-WORKDIR /usr/src/app
+WORKDIR  /usr/src/app
  
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
 # RUN npm i -g npm
@@ -13,7 +13,7 @@ RUN ng update
  
 RUN npm update
  
-COPY  . .
+COPY  . /usr/src/app/
 RUN npm run build  
  
 
