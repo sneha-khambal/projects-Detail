@@ -2,10 +2,11 @@ FROM node:latest AS build
 WORKDIR /usr/src/app
 COPY package-lock.json ./
 COPY package.json /app
+RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
  
 RUN  npm i npm
 RUN npm update -g @angular/cli
-RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
+
 
 
 
