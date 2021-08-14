@@ -4,14 +4,7 @@
 .firebase  
 .firebaserc
 .firebase,json
-
-.editorconfig 
  
-
-/e2e 
-
-/docs 
-
 .gitignore
  
 *.zip
