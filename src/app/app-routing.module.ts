@@ -6,6 +6,7 @@ import { HtmlCssComponent } from './components/html-css/html-css.component';
 import { ImagesComponent } from './components/images/images.component';
 import { JsComponent } from './components/js/js.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { NodejsComponent } from './nodejs/nodejs.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "img", pathMatch: "full" },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'angular', component: AngularComponent },
   { path: 'html-css', component: HtmlCssComponent },
   { path: 'js', component: JsComponent },
+  { path: 'nodejs', component: NodejsComponent },
 ];
 
 @NgModule({

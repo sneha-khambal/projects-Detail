@@ -18,7 +18,7 @@ export class JsService {
     'https://to-do-list-768f0.web.app/',
     'https://github.com/sneha-khambal/toDoList.git')
       ]
-  constructor() { }
+   
 
   getDetails(){
     return this.projectDetail.slice();

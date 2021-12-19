@@ -8,19 +8,23 @@ import { JsComponent } from './components/js/js.component';
 import { HtmlCssComponent } from './components/html-css/html-css.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ImagesComponent } from './components/images/images.component';
+import { NodejsComponent } from './nodejs/nodejs.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     AngularComponent,
     JsComponent,
     HtmlCssComponent,
     NavbarComponent,
-    ImagesComponent
-  ],
+    ImagesComponent,
+      NodejsComponent
+   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
