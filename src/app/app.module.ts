@@ -8,7 +8,7 @@ import { JsComponent } from './components/js/js.component';
 import { HtmlCssComponent } from './components/html-css/html-css.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ImagesComponent } from './components/images/images.component';
-import { NodejsComponent } from './nodejs/nodejs.component';
+import { NodejsComponent } from './components/nodejs/nodejs.component';
 
 @NgModule({
   declarations: [	

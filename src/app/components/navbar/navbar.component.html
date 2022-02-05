@@ -1,18 +1,30 @@
-<header class="container-fluid"> 
+<header class="container-fluid bg-light"> 
 
-  <nav class="navbar row text-center "  >
-    <span class="navbar-brand brand col-md-6 col-xl-3"  routerLink ="">PROJECTS</span>
-    <div class="row col-xl-9 col-md-9  ">
-      <span class="nav-item nav-link  col-md-6 ms-3 text-right" routerLink = "html-css" >HTML5 & CSS3 </span>
-      <span class="nav-item nav-link col-md-2  "routerLink = "js">JAVASCRIPT</span>
-      <span class="nav-item nav-link  col-md-2  " routerLink = "angular">ANGULAR</span>
-      <span class="nav-item nav-link  col-md-2 text-left" routerLink = "nodejs">NODE JS</span>
-      
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand "routerLink ="">PROJECTS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+      <div class="navbar-nav text-center hidNav">
+        <a class="nav-item nav-link "  routerLink = "html-css" >HTML5 & CSS3 <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link"  routerLink = "js">JAVASCRIPT</a>
+        <a class="nav-item nav-link" routerLink = "angular">ANGULAR</a>
+        <a class="nav-item nav-link " routerLink = "nodejs">NODE JS</a>
+      </div>
+    
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link "  routerLink = "html-css" >HTML5 & CSS3 <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link"  routerLink = "js">JAVASCRIPT</a>
+        <a class="nav-item nav-link" routerLink = "angular">ANGULAR</a>
+        <a class="nav-item nav-link " routerLink = "nodejs">NODE JS</a>
+      </div>
     </div>
   </nav>
 
  </header>
-  <body>
+  <body style="margin-top: 90px; overflow: hidden;">
     <router-outlet></router-outlet>
   </body>
 

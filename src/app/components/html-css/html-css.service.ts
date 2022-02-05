@@ -7,6 +7,8 @@ import { ProjectDetails } from '../project-details/angular.model';
 export class HtmlCssService {
 
   projectDetail:ProjectDetails[] =[
+  
+
     
     new ProjectDetails(
       'interactive-pricing-component',

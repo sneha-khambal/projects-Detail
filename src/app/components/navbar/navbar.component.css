@@ -1,18 +1,27 @@
-header{
-    background-color: darkslategray;padding: 10px;position: sticky; 
-}
-.navbar{
-    color:aliceblue;cursor: pointer;
-}
+ 
 
-.brand{
-    font-size: 40px;font-weight: 900;
+
+.navbar-brand{
+    font-size: 40px;font-weight: 900;cursor: pointer;
 }
-.navbar div {
-    float: right;display: flex;font-weight: bolder; letter-spacing:0.5px; line-height: 5px;
+#navbarNavAltMarkup{
+     font-weight: bolder;  margin-left: 45%;
 }
-span:hover{
+.navbar-brand:hover{
     color: chartreuse;
 }
-
- 
+.hidNav{
+    margin-left: 30%;
+   display: none;
+}
+.hidNav a:hover{
+    color: #000;
+}
+@media (max-width:600px) {
+    .navbar-brand{
+        font-size: 30px ;
+    }
+    .navbar:hover .hidNav{
+       display: block;
+    }
+}
